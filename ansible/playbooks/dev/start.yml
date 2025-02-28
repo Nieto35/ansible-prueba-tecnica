@@ -1,0 +1,12 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: Start local proxy
+      community.docker.docker_compose_v2:
+        project_src: /www/local-proxy
+        remove_orphans: true
+    - name: Start project
+      community.docker.docker_compose_v2:
+        project_src: /www/project
+        remove_orphans: true
+        build: always

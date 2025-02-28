@@ -1,0 +1,11 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: Stop local proxy
+      community.docker.docker_compose_v2:
+        project_src: /www/local-proxy
+        state: absent
+    - name: Stop project
+      community.docker.docker_compose_v2:
+        project_src: /www/project
+        state: absent

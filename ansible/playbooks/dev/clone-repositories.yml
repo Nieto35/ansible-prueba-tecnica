@@ -1,0 +1,11 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: Clone project repository
+      git:
+        repo: https://github.com/Nieto35/back-prueba-tecnica.git
+        dest: /www/project
+        update: no
+        version: main
+    - name: Change ownership of cloned files
+      command: chown -R 1000:1000 /www/project

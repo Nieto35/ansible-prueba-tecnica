@@ -1,0 +1,7 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: Copy .env.example to .env in project repository
+      copy:
+        src: /www/project/.env.example
+        dest: /www/project/.env
