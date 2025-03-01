@@ -58,7 +58,7 @@ cd ansible/docker; docker build -t project/ansible .; cd ../..
 ./ansible-playbook.sh dev/start.yml
 ```
 
-## Accessing the API Documentation
+## Acceso a la documentación de la API
 
 ```bash
 http://app.project.local/docs/api
