@@ -50,10 +50,21 @@ cd ansible/docker; docker build -t project/ansible .; cd ../..
 ./ansible-playbook.sh dev/start.yml
 ```
 
-##### Parar proyectos
+## Accessing the API Documentation
+
+```bash
+http://app.project.local/docs/api
+```
+```bash
+http://auth.project.local/docs/api
+```
+
+
+##### Parar proyectos SOLO PARAR CUANDO  NO SE ESTÉ USANDO (si lo paras no funcionará el proyecto)
 
 ```shell
 ./ansible-playbook.sh dev/stop.yml
 ```
+
 
 ## [repositorio de la prueba técnica de back-end](https://github.com/Nieto35/back-prueba-tecnica.git)
