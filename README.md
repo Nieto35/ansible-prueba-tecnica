@@ -2,19 +2,22 @@
 
 ## Comenzar
 
-### ¡¡IMPORTANT!!
+# ¡¡IMPORTANTE!!
 
-routes vhost
+==================================================
+RUTAS vhost
 ```bash
 Windows: C:\Windows\System32\drivers\etc\hosts
 Linux: /etc/hosts
 Mac: /etc/hosts
 ```
-Ensure you have the following entries in your `hosts` file:
+ASEGURATE de tener las siguientes RUTAS en tu archivo hosts:
+
 ```plaintext
 127.0.0.1 app.project.local
 127.0.0.1 auth.project.local
 ```
+==================================================
 
 ### Docker
 
@@ -27,6 +30,11 @@ Docker para estandarizar entornos de trabajo.
 Ansible para estandarizar procesos. Esta herramienta está disponible como imagen de Docker:
 
 ##### Construir imagen para ejecutar Ansible
+
+IMPORTATNTE TENER TU SISTEMA ACTUALIZADO:
+```shell
+sudo apt update && sudo apt upgrade
+```
 
 ```shell
 cd ansible/docker; docker build -t project/ansible .; cd ../..
