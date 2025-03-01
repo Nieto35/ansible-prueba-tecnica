@@ -2,11 +2,18 @@
 
 ## Comenzar
 
-### Archivo hosts
+### ¡¡IMPORTANT!!
 
+routes vhost
+```bash
+Windows: C:\Windows\System32\drivers\etc\hosts
+Linux: /etc/hosts
+Mac: /etc/hosts
 ```
-127.0.0.1 app.project.local 
-127.0.0.1 auth.project.local 
+Ensure you have the following entries in your `hosts` file:
+```plaintext
+127.0.0.1 app.project.local
+127.0.0.1 auth.project.local
 ```
 
 ### Docker
@@ -48,3 +55,5 @@ cd ansible/docker; docker build -t project/ansible .; cd ../..
 ```shell
 ./ansible-playbook.sh dev/stop.yml
 ```
+
+## [repositorio de la prueba técnica de back-end](https://github.com/Nieto35/back-prueba-tecnica.git)
